@@ -1,4 +1,4 @@
-# joaogustavo
+# Welcome to João's place
 
 ## Project setup
 ```
@@ -25,5 +25,41 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
+###  Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Notes to my future self => How to deploy this app on github-pages
+
+### For sort you can just execute this command changing the commit message
+```
+git checkout gh-pages && \
+      npm run build && \
+      git add dist/ && \
+      git commit -m 'My default commit message' && \
+      git subtree push --prefix dist origin gh-pages
+```
+
+### Change to gh-pages branch
+```
+git checkout gh-pages
+```
+
+### Build the application after implement the fancy feature
+```
+npm run build
+```
+
+### Add only the dist directory to stage in order to commit only this
+```
+git add dist/
+```
+
+### Commit it
+```
+git commit -m 'My commit message'
+```
+
+### Push the changes to gh-pages just like this
+```
+git subtree push --prefix dist origin gh-pages
+```
