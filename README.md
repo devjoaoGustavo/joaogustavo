@@ -30,9 +30,16 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Notes to my future self => How to deploy this app on github-pages
 
-### For sort you can just execute this command changing the commit message
+### Comment dist/ line on .gitignore file in order to deploy that directory content
 ```
-git checkout gh-pages && \
+# .gitignore
+
+# dist/
+```
+
+### For short you can just execute this command changing the commit message
+```
+git branch gh-pages && \
       npm run build && \
       git add dist/ && \
       git commit -m 'My default commit message' && \
