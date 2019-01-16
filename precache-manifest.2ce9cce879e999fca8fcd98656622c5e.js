@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "96daab3a9af76120ac3f",
-    "url": "/joaogustavo/js/app.1facbf17.js"
+    "revision": "03e4f28d50dbd84d47e7",
+    "url": "/joaogustavo/js/app.7e429f78.js"
   },
   {
     "revision": "87f515c968495ba41247",
@@ -16,15 +16,15 @@ self.__precacheManifest = [
     "url": "/joaogustavo/js/chunk-vendors.7c4737f2.js"
   },
   {
-    "revision": "373860ceb7c43cc3e653b4c63eaed7f2",
-    "url": "/joaogustavo/img/million-logo.373860ce.svg"
+    "revision": "21085fcefe857cdc1e179799ed6ae8d3",
+    "url": "/joaogustavo/img/web-logo.21085fce.svg"
   },
   {
     "revision": "e39687a6feaa69fedfcd774ceec11f8a",
     "url": "/joaogustavo/img/joao-profile.e39687a6.jpg"
   },
   {
-    "revision": "72a52eb05286dcd68b8d308000f26ab1",
+    "revision": "3a5808eb1cefa31860ae6d5bfcace3c7",
     "url": "/joaogustavo/index.html"
   },
   {
