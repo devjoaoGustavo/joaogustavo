@@ -1,11 +1,23 @@
-body {
+* {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+body {
+  max-width: 1024px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #f1f1f1;
+}
+
 header {
   text-align: center;
-  display: block;
-  padding: 6em 0 4em 0;
+  padding: 2em 0;
+  box-shadow: 0 .1px 15px grey;
 }
+
 header .avatar {
   border-radius: 100%;
   display: inline-block;
@@ -14,54 +26,7 @@ header .avatar {
 }
 header .avatar img {
   border-radius: 100%;
-  max-width: 200px;
-}
-header section {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  margin: 0 2em;
-}
-header section div {
-  display: flex;
-  flex-direction: column;
-  width: calc(100% / 7);
-  /* background-color: rgba(146, 146, 151, 0.25);  */
-  border-radius: 4px;
-  margin: 0 10px;
-}
-header section div span {
-  text-align: center;
-  font-size: 120%;
-}
-main {
-  display: block;
-}
-main section {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  margin: 0 2em;
-}
-main section div {
-  display: flex;
-  flex-direction: column;
-  width: calc(100% / 3);
-  background-color: rgba(146, 146, 151, 0.25);
-  margin: 0 10px;
-  border-radius: 4px;
-}
-main section div span {
-  text-align: center;
-  font-size: 120%;
-}
-main section div ul {
-  list-style: none;
-  padding-inline-start: 20px;
-  padding-inline-end: 20px;
-}
-main section div ul li {
-  margin-bottom: 1em;
+  max-width: 250px;
 }
 
 footer::before {
@@ -71,18 +36,111 @@ footer::before {
   display: block;
   margin: 0 auto 3em auto;
 }
+
 footer {
   text-align: center;
-  padding: 4em 0;
+  padding: 3em 0;
 }
 
-header .opac-3 {
-  opacity: 0.15;
-}
-header .opac-2 {
-  opacity: 0.35;
-}
-header .opac-1 {
-  opacity: 0.5;
+main {
+  padding: 20px 0px;
+  text-align: center;
 }
 
+main p {
+  text-align: center;
+}
+
+#social {
+  margin-top: 20px;
+  list-style: none;
+}
+
+#social li {
+  display: inline;
+  margin: 0px 5px;
+  padding: 5px 15px;
+}
+
+#social li:hover {
+  border-radius: 15px;
+  box-shadow: 0px 1px 10px grey;
+  background-color: #fa0;
+}
+
+#social li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Este trecho de código foi copiado de https://loading.io/css/ que esta sob a
+ * licença [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/deed.pt_BR)*/
+/* Início */
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fa0;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+/* Fim */
+
+@media (max-width: 370px) {
+  #social li {
+    display: inline;
+    margin: 0px 1px;
+    padding: 0px;
+  }
+
+  #social li:hover {
+    box-shadow: 0px 1px 10px grey;
+  }
+}
