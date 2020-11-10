@@ -49,8 +49,26 @@ main {
   text-align: center;
 }
 
-main p {
-  text-align: center;
+main .form-test {
+  margin: auto;
+  box-shadow: 0px 1px 10px grey;
+  max-width: 300px;
+  text-align: left;
+  padding: 5px;
+}
+
+.form-action {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.form-action button {
+  background-color: 
+  border: none;
+}
+
+.form-test input {
+  width: 100%;
 }
 
 #social {
